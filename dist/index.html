@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="preload" href="/fonts/roboto-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="header__top-line">
+		<div class="container-fluid container-lg">
+			<div class="row">
+				<div class="col-7 col-sm-8 d-flex align-items-center">
+					<img class="header__logo" src="images/dist/simplyfood-logo-pizza-pasta-restaurant-hamburg 1.png" alt="лого шапки">
+				</div>
+				<div class="col-5 col-sm-4">
+					<div class="header__contacts">
+						<span class="header__contact-item--address d-flex">Fuhlsbüttler Str. 397 <br> Hamburg</span>
+						<span class="header__contact-item--phone d-flex">040 41 629 310</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom-line">
+		<div class="container-fluid container-lg position-relative">
+			<div class="row">
+				<div class="col-11">
+					<div id="burger" class="header__menu-hamburger d-flex d-lg-none">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<nav class="header__nav">
+						<a href="#0" class="header__nav-link">Home</a>
+						<a href="#0" class="header__nav-link">Pizza</a>
+						<a href="#0" class="header__nav-link">Pasta</a>
+						<a href="#0" class="header__nav-link">Rezerve online</a>
+						<a href="#0" class="header__nav-link">Contacts</a>
+						<a href="#0" class="header__nav-link">About us</a>
+					</nav>
+				</div>
+				<div class="col-1">
+					<div class="header__client-btns-wrapper">
+						<button class="header__client-btn" href="#0"><img loading="lazy" src="images/dist/Icon_ User.svg" alt="иконка пользователя"></button>
+						<button class="header__client-btn" id="show-cart" href="#0"><img loading="lazy" src="images/dist/Icon_ Bag.svg" alt="иконка корзины"></button>
+					</div>
+				</div>
+			</div>
+			<div class="cart">
+    <div class="cart__title">Welcome to cart my friend</div>
+    <span class="cart__total-cost">10</span>
+</div>
+	
+		</div>
+	</div>
+</header>
+<div class="home-hero">
+    <div class="container-fluid container-lg">
+        <div class="row">
+            <div class="col-lg-7  col-md-6 col-sm-8">
+                <h1 class="home-hero__title">Welcome to Simplyfood, Hamburgs finest Pizza & Pasta restaurant in Hamburg!</h1>
+                <button class="btn home-hero__btn" data-fancybox data-src="#reservation-modal">Online reservation</button>
+            </div>
+        </div>
+    </div>
+    <img loading="lazy" class="home-hero__img" src="images/dist/Frame 15.png" alt="картинка главного экрана">
+</div>
+<div class="category">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <span class="category__title">Lunch</span>
+                <a href="#0" class="btn category__btn">Show more</a>
+            </div>
+        </div>
+        <div id="menu-slider-1" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-1.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <button 
+                                class="btn menu-item__btn" 
+                                data-img="images/dist/Lunch-img-1.jpg"
+                                data-title="CAESAR SALATnach Art des Hauses"
+                                data-price="11.60"
+                                data-count="1"
+                                data-id="123"
+                                data-max-count="20"
+                                href="#0">hinzufügen
+                                </button>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-2.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-3.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <button
+                                class="btn menu-item__btn" 
+                                data-img="images/dist/Lunch-img-3.jpg"
+                                data-title="CAESAR SALATnach Art des Hauses"
+                                data-price="10.60"
+                                data-count="1"
+                                data-id="124"
+                                data-max-count="20"
+                                href="#0">hinzufügen
+                                </button>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div id="menu-slider-2" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-4.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-5.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-4.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Lunch-img-5.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>
+    </div>
+</div>
+
+<div class="category">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <span class="category__title">Pasta</span>
+                <a href="#0" class="btn category__btn">Show more</a>
+            </div>
+        </div>
+        <div id="menu-slider-1" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-1.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-2.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-3.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div id="menu-slider-2" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-4.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-5.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-4.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Pasta-img-5.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <span class="category__title">Hamburgs</span>
+                <a href="#0" class="btn category__btn">Show more</a>
+            </div>
+        </div>
+        <div id="menu-slider-1" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-1.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-1.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-1.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div id="menu-slider-2" class="menu-slider swiper-container">
+            <div class="menu-slider__wrapper swiper-wrapper">
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-2.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-3.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-2.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider__item swiper-slide">
+                    <div class="menu-item">
+                        <div class="menu-item__content-wrapper">
+                            <img loading="lazy" class="menu-item__img" src="images/dist/Hamburger-img-3.jpg" alt="картинка ланча">
+                            <div class="menu-item__info-wrapper">
+                                <div class="menu-item__price">€11.60-€13.60</div>
+                                <a class="btn menu-item__btn" href="#0">hinzufügen</a>
+                            </div>
+                        </div>
+                        <div class="menu-item__content-wrapper-bottom">
+                            <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                            <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="menu-slider__arrow slider__prev-arrow swiper-button-prev"></div>
+            <div class="menu-slider__arrow slider__next-arrow swiper-button-next"></div>
+            <div class="menu-slider__scrollbar swiper-scrollbar"></div>
+        </div>   
+    </div>
+</div>
+<div class="category category--mobile-category">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span class="category__title">Lunch</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="menu-item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/lunch-mobile.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div>
+                    <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a> 
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="menu-item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/lunch-mobile1.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div>
+                    <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a>                    
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="menu-item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/lunch-mobile2.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div>
+                    <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a> 
+                </div>
+            </div>
+            <div class="col-12">
+                <a href="#0" class="btn">Show more</a>  
+            </div>  
+        </div>
+    </div>
+</div>
+<div class="category category--mobile-category">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span class="category__title">Pasta</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="menu item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/pasta-mobile.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div> 
+                </div>
+                <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a>
+            </div>
+            <div class="col-12">
+                <div class="menu-item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/pasta-mobile1.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div> 
+                </div>
+                <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a>
+            </div>
+            <div class="col-12">
+                <div class="menu-item menu-item--mobile-item">
+                    <img loading="lazy" class="menu-item__img" src="images/dist/pasta-mobile2.svg" alt="картинка ланча">
+                    <div class="menu-item__content-wrapper-bottom d-flex  justify-content-start ">
+                        <span class="menu-item__title">CAESAR SALATnach Art des Hauses</span>
+                        <span class="menu-item__price menu-item__price--small">€11.60-€13.60</span>
+                    </div> 
+                </div>
+                <a class="btn menu-item--mobile-btn" href="#0">hinzufügen</a>
+            </div>
+            <div class="col-12">
+                <a href="#0" class="btn">Show more</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-window" id="reservation-modal">
+    <span class="modal-window__title">Online reservation</span>
+    <form autocomplete="off" id="form" class="modal-window__reservation-form">
+        <input class="modal-window__input" name="name" type="text" placeholder="Your name*" required>
+        <input class="modal-window__input" name="phone" type="text" placeholder="Your phone*" required>
+        <input class="modal-window__input" name="time" type="date" placeholder="Reservation time*" required>
+        <button type="submit" class="btn modal-window__btn">submit
+            <span class="modal-window__btn-line modal-window__btn-line--top"></span>
+            <span class="modal-window__btn-line modal-window__btn-line--right"></span>
+            <span class="modal-window__btn-line modal-window__btn-line--bottom"></span>
+            <span class="modal-window__btn-line modal-window__btn-line--left"></span>
+        </button>
+    </form>
+</div>
+<footer class="footer">
+    <div class="container-fluid container-lg">
+        <div class="row">
+            <div class="col-12 d-lg-none d-flex">
+                <img loading="lazy" class="footer__logo" src="images/dist/simplyfood-logo-pizza-pasta-restaurant-hamburg 1.png" alt="лого подвала" >
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="footer__time-table">
+                    <span>Öffnungszeiten:</span>
+                    <span>Mo. – Do. 11:30 – 22:30 Uhr</span>
+                    <span>Freitag 11:30 – 0 Uhr</span>
+                    <span>Samstag 10:00 bis 0 Uhr</span>
+                    <span>Sonntag 10:00 bis 22:30 Uhr</span>
+                </div>
+            </div>
+            <div class="col-2 d-lg-flex d-none">
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#0">Home</a>
+                    <a class="footer__nav-link" href="#0">Pizza</a>
+                    <a class="footer__nav-link" href="#0">Pasta</a>
+                    <a class="footer__nav-link" href="#0">Rezerve online</a>
+                    <a class="footer__nav-link" href="#0">Contacts</a>
+                    <a class="footer__nav-link" href="#0">About us</a>
+                </nav>
+            </div>
+            <div class="col-lg-2 col-md-12">
+                <div class="footer__nav">
+                    <a class="footer__nav-link footer__nav-link--tripadvisor" href="#0">Tripadvisor</a>
+                    <a class="footer__nav-link footer__nav-link--yelp" href="#0">Yelp</a>
+                    <a class="footer__nav-link footer__nav-link--instagram" href="#0">Instagram</a>
+                    <a class="footer__nav-link footer__nav-link--facebook" href="#0">Facebook</a>
+                    <a class="footer__nav-link footer__nav-link--google" href="#0">Google+</a>
+                </div>
+            </div>
+            <div class="col-2 d-lg-flex d-none">
+                <div class="footer__nav">
+                    <a class="footer__nav-link" href="#0">Anfahrt</a>
+                    <a class="footer__nav-link" href="#0">Kontakt</a>
+                    <a class="footer__nav-link" href="#0">Jobs</a>
+                    <a class="footer__nav-link" href="#0">Datenschutz</a>
+                    <a class="footer__nav-link" href="#0">Impressum</a>
+                </div>
+            </div>
+            <div class="col-2 d-lg-flex d-none">
+                <img loading="lazy" class="footer__logo" src="images/dist/simplyfood-logo-pizza-pasta-restaurant-hamburg 1.png" alt="лого подвала" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <span class="footer__copyright">© Simply Food. All rights reserved. 2021</span>
+            </div>
+        </div>
+    </div>
+    <img loading="lazy" class="footer__img" src="images/dist/Frame 49.svg" alt="картинка подвала">
+</footer>
+<script src="js/app.min.js"></script>
+</body>
+</html>
+
+

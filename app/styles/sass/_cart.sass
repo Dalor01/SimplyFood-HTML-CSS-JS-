@@ -1,0 +1,68 @@
+.cart
+    position: absolute
+    right: 8px
+    max-height: 550px
+    width: 700px
+    padding: 20px
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    z-index: 9999
+    overflow: hidden
+    overflow-y: scroll
+    margin-top: 5px
+    border: 4px solid $redcolor
+    &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        background-color: #F5F5F5
+    &::-webkit-scrollbar
+        width: 6px;
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        background-color: $redcolor
+    &--active
+        display: block
+    &__title
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 20px
+        color: $redcolor
+        text-align: center
+    &__item
+        position: relative
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        padding: 10px 
+    &__item-img
+        height: 80px
+        width: 80px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 10px
+    &__item-title
+        display: block
+        font-weight: bold
+    &__item-price
+        display: block
+        font-weight: bold
+    &__item-quantity input
+        border: 2px solid $redcolor
+        font-weight: bold
+    &__item-remove
+        position: absolute
+        right: 0
+        top: 0
+        border: none
+        background-color: transparent
+        border-radius: 4px
+        color: $redcolor
+        &:hover
+            background: $redcolor
+            color: #fff
+    &__total-cost
+        position: absolute
+        right: 20px
+        bottom: 10px

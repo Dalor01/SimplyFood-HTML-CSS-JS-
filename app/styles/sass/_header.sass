@@ -1,0 +1,145 @@
+.header
+    min-width: 100%
+    &__top-line
+        background-color: #3C3C3C
+        min-height: 100px
+        min-width: 100%
+        display: flex
+        align-items: center
+    &__contacts
+        color: #FFFF
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100%
+    &__contact-item--address
+        &::before
+            background-image: url(../images/dist/Location.svg)
+            content: ' '
+            height: 24px
+            width: 24px
+            display: inline-block
+            background-position: center
+            background-repeat: no-repeat
+            margin-right: 5px
+    &__contact-item--phone
+        &::before
+            background-image: url(../images/dist/Call.svg)
+            content: ' '
+            height: 24px
+            width: 24px
+            display: inline-block
+            background-position: center
+            background-repeat: no-repeat
+            margin-right: 15px
+    &__bottom-line
+        background-color: #6B6868
+        &--fixed
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            z-index: 9998
+    &__menu-hamburger
+        display: flex
+        flex-direction: column
+        height: 50px
+        width: 40px 
+        align-items: flex-end
+        justify-content: center
+        div
+            width: 24px
+            height: 3px
+            background-color: #FFFF 
+            margin-top: 3px
+            margin-bottom: 3px
+            border-radius: 5px
+            transition: all 0.5s ease 0s       
+            &:nth-child(2)
+                width: 22px
+            &:nth-child(3)
+                width: 19px
+    &__nav
+        display: none
+    &__nav.active
+        display: flex
+        flex-direction: column
+        background-color: #fff
+        margin-top: 50px
+        position: absolute
+        min-width: 1000px 
+        top: 0
+        left: 0 
+        z-index: 999  
+    &__nav.active a
+        color: $blackcolor
+        font-size: 14px
+        font-weight: 600          
+    &__nav-link
+        padding: 13px
+        text-decoration: none
+        color: #fff
+        &:hover
+            text-decoration: none
+            color: #fff
+            background-color: $redcolor
+            box-shadow: 0 0 10px $redcolor
+    &__client-btns-wrapper 
+        height: 100%
+        display: flex
+        justify-content: flex-end
+    &__client-btn
+        padding: 13px
+        height: 100%
+        border: none
+        background-color: transparent
+        &:hover, &--active          
+            background-color: $redcolor
+            box-shadow: 0 0 10px $redcolor
+
+            
+@include media-breakpoint-up(xs)
+    .header
+        &__top-line
+            display: flex
+            align-items: center
+@include media-breakpoint-up(lg)
+    .header
+        &__nav
+            display: flex
+@include media-breakpoint-down(lg)
+    .header
+        &__menu-hamburger.active div
+            display: flex
+            position: absolute
+            &:nth-child(1)
+                transform: rotate(45deg)
+                height: 3px
+                width: 30px
+            &:nth-child(3)
+                display: none
+            &:nth-child(2)
+                display: none
+            &:nth-child(4)
+                transform: rotate(-45deg)
+                height: 3px
+                width: 30px
+        &__contacts
+            display: flex
+            flex-direction: column
+            
+@include media-breakpoint-down(sm)
+    .header
+        &__contact-item--phone
+            display: flex
+            align-items: flex-start
+            justify-content: flex-end
+            margin-bottom: 5px
+            margin-top: 5px
+        &__contact-item--address
+            display: flex
+            align-items: flex-start
+            justify-content: flex-end
+            margin-bottom: 5px
+            margin-top: 5px                       

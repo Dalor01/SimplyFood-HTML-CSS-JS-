@@ -1,0 +1,103 @@
+.modal-window
+    max-width: 100%
+    display: none
+    border-radius: 10px
+    transition: all 0.8s ease 0s
+    &:hover
+        transform: scale(1.5)
+    &__title
+        text-align: center
+        line-height: 1.2
+        font-size: 27px
+        text-transform: uppercase
+        color: $redcolor
+        font-weight: bold
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-bottom: 30px
+    &__reservation-form
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: auto
+    &__success-message
+        text-align: center
+        font-weight: bold
+        font-size: 16px
+        text-transform: uppercase
+    &__input 
+        max-width: 100%
+        padding: 10px
+        margin: 15px 0px 15px 0px
+        border: 2px solid
+        border-radius: 5px
+        border-color: black
+        transition: 0.3s 
+        &:hover
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        &:focus
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25)
+    &__btn
+        box-shadow: none
+        background-color: #fff
+        color: $redcolor
+        margin-top: 25px
+        position: relative
+        display: inline-block
+        padding: 15px 30px
+        overflow: hidden
+        transition: 0.2s
+        &:hover
+            color: #fff 
+            box-shadow: 0 0 10px $redcolor,0 0 15px $redcolor
+            transition: 1s
+            transition-delay: 0.5s
+            background-color: $redcolor   
+    &__btn-line
+        position: absolute
+        display: block
+    &__btn-line--top
+        left: -100%
+        top: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(90deg,transparent,$redcolor)
+    &__btn:hover &__btn-line--top
+        left: 100%
+        transition: 1s 
+        transition-delay: 0.25s
+    &__btn-line--bottom
+        right: -100%
+        bottom: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(270deg,transparent,$redcolor)
+    &__btn:hover &__btn-line--bottom
+        right: 100%
+        transition: 1s 
+        transition-delay: 0.25s
+    &__btn-line--left
+        left: 0
+        bottom: -100% 
+        width: 2px
+        height: 100%
+        background: linear-gradient(0deg,transparent,$redcolor)
+    &__btn:hover &__btn-line--left
+        bottom: 100%
+        transition: 1s 
+        transition-delay: 0
+    &__btn-line--right
+        right: 0
+        top: -100% 
+        width: 2px
+        height: 100%
+        background: linear-gradient(180deg,transparent,$redcolor)
+    &__btn:hover &__btn-line--right
+        top: 100%
+        transition: 1s 
+        transition-delay: 0
+@include media-breakpoint-down(sm)
+    .modal-window
+        &:hover
+            transform: scale(1)

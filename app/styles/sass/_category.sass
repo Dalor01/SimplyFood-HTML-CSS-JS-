@@ -1,0 +1,27 @@
+.category
+    margin-top: 50px
+    margin-bottom: 200px
+    &__title
+        font-size: 54px
+        color: $blackcolor
+        font-weight: 900
+    &__btn
+        width: 220px
+        height: 55px
+    &--mobile-category
+        margin-bottom: 0px
+@include media-breakpoint-down(xl)
+    .category
+        display: flex
+        &--mobile-category
+            display: none
+@include media-breakpoint-only(md)
+    .category
+        display: flex
+        &--mobile-category
+            display: none        
+@include media-breakpoint-down(sm)
+    .category
+        display: none
+        &--mobile-category
+            display: flex     

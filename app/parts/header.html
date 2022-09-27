@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title><!--#echo var="title" --></title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="preload" href="/fonts/roboto-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="header__top-line">
+		<div class="container-fluid container-lg">
+			<div class="row">
+				<div class="col-7 col-sm-8 d-flex align-items-center">
+					<img class="header__logo" src="images/dist/simplyfood-logo-pizza-pasta-restaurant-hamburg 1.png" alt="лого шапки">
+				</div>
+				<div class="col-5 col-sm-4">
+					<div class="header__contacts">
+						<span class="header__contact-item--address d-flex">Fuhlsbüttler Str. 397 <br> Hamburg</span>
+						<span class="header__contact-item--phone d-flex">040 41 629 310</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom-line">
+		<div class="container-fluid container-lg position-relative">
+			<div class="row">
+				<div class="col-11">
+					<div id="burger" class="header__menu-hamburger d-flex d-lg-none">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<nav class="header__nav">
+						<a href="#0" class="header__nav-link">Home</a>
+						<a href="#0" class="header__nav-link">Pizza</a>
+						<a href="#0" class="header__nav-link">Pasta</a>
+						<a href="#0" class="header__nav-link">Rezerve online</a>
+						<a href="#0" class="header__nav-link">Contacts</a>
+						<a href="#0" class="header__nav-link">About us</a>
+					</nav>
+				</div>
+				<div class="col-1">
+					<div class="header__client-btns-wrapper">
+						<button class="header__client-btn" href="#0"><img loading="lazy" src="images/dist/Icon_ User.svg" alt="иконка пользователя"></button>
+						<button class="header__client-btn" id="show-cart" href="#0"><img loading="lazy" src="images/dist/Icon_ Bag.svg" alt="иконка корзины"></button>
+					</div>
+				</div>
+			</div>
+			<!--#include virtual="/parts/cart.html" -->	
+		</div>
+	</div>
+</header>

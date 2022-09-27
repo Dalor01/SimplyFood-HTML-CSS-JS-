@@ -1,0 +1,26 @@
+::placeholder
+	color: #666
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: $redcolor
+	&:required:valid
+		border-color: $redcolor
+html, body
+	// height: 100%
+	overflow-x: hidden !important
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	height: 100%
+	background-color: #fff
+.compensate-for-scrollbar
+	margin-right: 0 !important

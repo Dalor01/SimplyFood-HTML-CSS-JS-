@@ -1,0 +1,113 @@
+.menu-item
+    margin-top: 80px
+    width: 100%
+    position: relative
+    &__img
+        width: 100%
+    &__content-wrapper
+        position: relative
+        min-width: 100%
+        min-height: 100%     
+    &__content-wrapper:hover .menu-item__info-wrapper
+        position: absolute  
+        content: ' '
+        top: 0
+        left: 0
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        border-radius: 5px 
+    &__info-wrapper
+        display: none
+        color: #fff
+        font-weight: 999
+        font-size: 24px
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        background-color: rgba(42, 42, 42, 0.5)
+        min-height: 100%
+        min-width: 100%
+        z-index: 999 !important         
+    &__btn
+        width: 90% 
+        height: 55px
+        font-size: 18px
+        margin-top: 60px
+        margin-bottom: 30px  
+        &::before
+            background-image: url("../images/dist/Icon_ Bag.svg")
+            height: 24px
+            width: 24px
+            display: inline-block
+            content: ' '
+            background-repeat: no-repeat
+            margin-right: 5px
+            background-position: center
+    &__price
+        text-align: center
+    &__content-wrapper-bottom
+        font-size: 15px
+        font-weight: 900
+        display: flex
+        justify-content: space-between
+        margin-top: 10px
+    &--mobile-item
+        margin-top: 40px
+        margin-bottom: 20px
+    &--mobile-btn
+        background-color: #FFFFFF
+        border: 1px solid $redcolor 
+        box-sizing: border-box
+        border-radius: 5px
+        color: $redcolor
+        height: 55px
+        width: auto
+        box-shadow: none
+        font-weight: 999
+        margin-top: 15px
+        margin-bottom: 15px
+        &:hover
+            color: $redcolor
+        &::before
+            background-image: url("../images/dist/Bag.svg")
+            content: ' '
+            height: 24px
+            width: 24px
+            display: inline-block
+            background-position: center
+            background-repeat: no-repeat
+            margin-right: 10px
+    &__mobile-btn--bottom
+        height: 55px
+        width: auto
+        margin-top: 25px
+        font-weight: 999
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+.menu-slider
+    width: 100%
+    z-index: 999 !important  
+    &__item
+        min-height: 100%
+        width: 300px    
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    &__arrow
+        height: 70px
+        width: 70px
+        background-color: #94888891
+        backdrop-filter: blur(5px)
+        border-radius: 7.5px
+        color: #fff
+        z-index: 1
+        &::after
+            font-size: 25px
+    &__scrollbar
+        margin-top: 50px
+        background-color:#EFEFEF
+        position: relative !important
+        div
+            background-color: $redcolor
+
+
